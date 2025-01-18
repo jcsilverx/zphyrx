@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.2
+
+### Patch Changes
+
+- ad4ed11: add `tagTester` method
+
 ## 0.0.1
 
 ### Patch Changes
