@@ -4,7 +4,8 @@
 
 ### Patch Changes
 
-- f9cb831: - add `sameType` method
+- f9cb831:
+  - add `sameType` method
   - add `sameValueNonNumber` method
   - add `sameValueNumber` method
   - add `sameValueZeroNumber` method
