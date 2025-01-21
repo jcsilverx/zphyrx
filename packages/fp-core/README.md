@@ -1,15 +1,15 @@
-# `@zphyrix/fp-core`
+# `@zphyrx/fp-core`
 
 ## Installation
 
-To install `@zphyrix/fp-core`, run the following command:
+To install `@zphyrx/fp-core`, run the following command:
 
 ```sh
 # Using npm
-$ npm install @zphyrix/fp-core
+$ npm install @zphyrx/fp-core
 
 # or using pnpm
-$ pnpm add @zphyrix/fp-core
+$ pnpm add @zphyrx/fp-core
 ```
 
 ## Usage
