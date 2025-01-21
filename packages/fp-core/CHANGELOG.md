@@ -1,5 +1,17 @@
 # @zphyrx/fp-core
 
+## 0.0.3
+
+### Patch Changes
+
+- f9cb831: - add `sameType` method
+  - add `sameValueNonNumber` method
+  - add `sameValueNumber` method
+  - add `sameValueZeroNumber` method
+  - add `sameValue` method
+  - add `sameValueZero` method
+  - add `equalNumber` method
+
 ## 0.0.2
 
 ### Patch Changes
