@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.4
+
+### Patch Changes
+
+- 907ea44: Add `sort` method
+
 ## 0.0.3
 
 ### Patch Changes
