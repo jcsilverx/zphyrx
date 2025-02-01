@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.5
+
+### Patch Changes
+
+- 3a995c7: Add `reverse` method
+
 ## 0.0.4
 
 ### Patch Changes
