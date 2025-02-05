@@ -1,5 +1,15 @@
 # @zphyrx/fp-core
 
+## 0.0.7
+
+### Patch Changes
+
+- f7cbc15: add `abs` method
+  add `ceil` method
+  add `floor` method
+  add `round` method
+  add `trunc` method
+
 ## 0.0.6
 
 ### Patch Changes
