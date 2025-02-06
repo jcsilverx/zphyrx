@@ -1,31 +1,18 @@
 const MIN_RUN = 32;
 
-const sort = <T>(A: readonly T[], sortCompare: (x: T, y: T) => number): T[] => {
-  let len = A.length >>> 0;
-  let items: T[] = [];
-  let k = 0;
-
-  while (k < len) {
-    let I = A[k] as T;
-
-    items[k] = I;
-
-    k++;
-  }
-
-  timSort(items, sortCompare);
-
-  return items;
-};
-
-const timSort = <T>(A: T[], compareFn: (a: T, b: T) => number): void => {
+const timSort = <T>(
+  A: readonly T[],
+  compareFn: (a: T, b: T) => number,
+): T[] => {
   let len = A.length >>> 0;
   let k = 0;
+
+  let R: T[] = A as T[];
 
   while (k < len) {
     let min = Math.min(k + MIN_RUN - 1, len - 1);
 
-    insertionSort(A, k, min, compareFn);
+    insertionSort(R, k, min, compareFn);
 
     k += MIN_RUN;
   }
@@ -39,13 +26,13 @@ const timSort = <T>(A: T[], compareFn: (a: T, b: T) => number): void => {
       let m = l + s - 1;
       let r = Math.min(l + 2 * s - 1, len - 1);
 
-      if (m < r) merge(A, l, m, r, compareFn);
+      if (m < r) merge(R, l, m, r, compareFn);
     }
 
     s *= 2;
   }
 
-  return;
+  return R;
 };
 
 const insertionSort = <T>(
@@ -131,4 +118,4 @@ const merge = <T>(
   return;
 };
 
-export { MIN_RUN, sort, timSort, insertionSort, merge };
+export { MIN_RUN, timSort, insertionSort, merge };
