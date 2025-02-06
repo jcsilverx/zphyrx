@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.9
+
+### Patch Changes
+
+- 3fc9d00: Add new `timSort` method
+
 ## 0.0.8
 
 ### Patch Changes
