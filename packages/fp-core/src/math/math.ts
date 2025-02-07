@@ -15,4 +15,8 @@ const floor = (x: number): number => Math.floor(x);
 
 const trunc = (x: number): number => Math.trunc(x);
 
-export { round, abs, ceil, floor, trunc };
+const pow = (x: number, y: number): number => Math.pow(x, y);
+
+const random = (): number => Math.random();
+
+export { round, abs, ceil, floor, trunc, pow, random };
