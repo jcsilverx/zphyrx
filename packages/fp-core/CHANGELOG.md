@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.11
+
+### Patch Changes
+
+- 5e47ebc: Add `pow` method
+
 ## 0.0.10
 
 ### Patch Changes
