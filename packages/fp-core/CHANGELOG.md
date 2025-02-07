@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.10
+
+### Patch Changes
+
+- 6631185: Add `split` method
+
 ## 0.0.9
 
 ### Patch Changes
