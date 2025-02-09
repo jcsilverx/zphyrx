@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.13
+
+### Patch Changes
+
+- 3a04a35: Rename `shiftN` to `shift`
+
 ## 0.0.12
 
 ### Patch Changes
