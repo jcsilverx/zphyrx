@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.12
+
+### Patch Changes
+
+- ec28afb: Add `shiftN` method
+
 ## 0.0.11
 
 ### Patch Changes
