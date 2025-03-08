@@ -1,1 +1,1 @@
-export * from "./keys";
+export * from "./get-own-keys";

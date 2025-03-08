@@ -1,6 +1,6 @@
 import * as _ from "@zphyrx/fp-core";
 
-describe("shiftN method", (): void => {
+describe("shift method", (): void => {
   it("should - 1", (): void => {
     let output = adjust(1.005, 2);
 
@@ -74,7 +74,7 @@ const adjust = (
   let P = precision == null ? 0 : Math.min(precision, 292);
 
   if (precision && Number.isFinite(x)) {
-    return _.shiftN(f(_.shiftN(x, P)), -P);
+    return _.shift(f(_.shift(x, P)), -P);
   }
 
   return f(x);

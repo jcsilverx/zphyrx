@@ -1,6 +1,8 @@
 /**
  * The `_shift_` method...
  *
+ * @since 0.0.14
+ *
  * @param n
  * @param exp
  * @returns
