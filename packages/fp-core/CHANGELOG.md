@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.14
+
+### Patch Changes
+
+- 32a9c7a: Refactor entire codebase
+
 ## 0.0.13
 
 ### Patch Changes
