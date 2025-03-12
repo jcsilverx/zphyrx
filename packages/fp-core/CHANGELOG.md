@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.16
+
+### Patch Changes
+
+- e4fd8f1: Refactor `canonicalizeKeyedCollectionKey` method
+
 ## 0.0.15
 
 ### Patch Changes
