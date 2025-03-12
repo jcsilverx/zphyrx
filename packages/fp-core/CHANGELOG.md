@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.15
+
+### Patch Changes
+
+- 1431289: Add `canonicalizeKeyedCollectionKey` method
+
 ## 0.0.14
 
 ### Patch Changes
