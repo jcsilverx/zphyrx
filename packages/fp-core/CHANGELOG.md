@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.17
+
+### Patch Changes
+
+- 9f14fc4: Add `EMPTY` const
+
 ## 0.0.16
 
 ### Patch Changes
