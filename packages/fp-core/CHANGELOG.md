@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.21
+
+### Patch Changes
+
+- 9e7cb94: Refactor docs
+
 ## 0.0.20
 
 ### Patch Changes
