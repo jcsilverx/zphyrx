@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.19
+
+### Patch Changes
+
+- 6649bac: Add `cleanSetData` method
+
 ## 0.0.18
 
 ### Patch Changes
