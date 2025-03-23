@@ -1,6 +1,6 @@
 import { EMPTY } from "./empty";
 
-type ExcludeSymbol<T> = T extends typeof EMPTY ? never : T;
+type ExcludeSymbol<T> = T extends symbol ? never : T;
 
 type OrdinarySet<T> = Set<ExcludeSymbol<T>>;
 
