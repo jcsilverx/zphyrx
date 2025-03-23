@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.20
+
+### Patch Changes
+
+- 0951b98: Rename `createSetData` to `ordinarySetCreate`
+
 ## 0.0.19
 
 ### Patch Changes
