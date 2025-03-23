@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.18
+
+### Patch Changes
+
+- b706620: Add `setDataIndex` method
+
 ## 0.0.17
 
 ### Patch Changes
