@@ -6,10 +6,10 @@ type CompareFn<T, R = T> = (x: T, y: T) => R;
  * @since 0.0.18
  */
 const setDataIndex = <T, S extends T>(
-  a: T[],
+  a: readonly T[],
   value: S,
   compareFn?: CompareFn<S, boolean>,
-) => {
+): number => {
   let len = a.length >>> 0;
 
   if (compareFn !== undefined && typeof compareFn !== "function") {
