@@ -5,7 +5,8 @@
     "moduleResolution": "Bundler",
     "outDir": "dist/esm",
     "types": ["vitest/globals"],
-    "rootDir": "."
+    "rootDir": ".",
+    "noUncheckedIndexedAccess": false
   },
   "include": ["src", "**/*.ts", "**/*.mts"],
   "exclude": ["node_modules", "dist"]
