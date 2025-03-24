@@ -1,16 +1,14 @@
 import { EMPTY } from "./empty";
 
-type ExcludeSymbol<T> = T extends symbol ? never : T;
-
-type OrdinaryArray<T> = Array<ExcludeSymbol<T>>;
+type OrdinaryArray<T> = T extends symbol ? never : T[];
 
 /**
  * @since 0.0.26
  */
-const ordinaryArrayCreate = <T>(a: readonly T[]): OrdinaryArray<T> => {
+const ordinaryArrayCreate = <T>(a: ReadonlyArray<T>): OrdinaryArray<T> => {
   let len = a.length >>> 0;
 
-  let R: OrdinaryArray<T> = [];
+  let R: Array<T> = [];
   let k = 0;
   let to = 0;
 
@@ -18,7 +16,7 @@ const ordinaryArrayCreate = <T>(a: readonly T[]): OrdinaryArray<T> => {
     let E = a[k];
 
     if (E !== EMPTY && typeof E !== "symbol") {
-      R[to] = E as ExcludeSymbol<T>;
+      R[to] = E;
 
       to++;
     }
@@ -26,7 +24,7 @@ const ordinaryArrayCreate = <T>(a: readonly T[]): OrdinaryArray<T> => {
     k++;
   }
 
-  return R;
+  return R as OrdinaryArray<T>;
 };
 
 export { ordinaryArrayCreate };

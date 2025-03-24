@@ -1,8 +1,6 @@
 import { EMPTY } from "./empty";
 
-type ExcludeSymbol<T> = T extends symbol ? never : T;
-
-type OrdinarySet<T> = Set<ExcludeSymbol<T>>;
+type OrdinarySet<T> = T extends symbol ? never : Set<T>;
 
 /**
  * @since 0.0.20
@@ -10,20 +8,20 @@ type OrdinarySet<T> = Set<ExcludeSymbol<T>>;
 const ordinarySetCreate = <T>(a: readonly T[]): OrdinarySet<T> => {
   let len = a.length >>> 0;
 
-  let R: OrdinarySet<T> = new Set<ExcludeSymbol<T>>();
+  let R: Set<T> = new Set<T>();
   let k = 0;
 
   while (k < len) {
     let E = a[k];
 
     if (E !== EMPTY && typeof E !== "symbol") {
-      R.add(E as ExcludeSymbol<T>);
+      R.add(E);
     }
 
     k++;
   }
 
-  return R;
+  return R as OrdinarySet<T>;
 };
 
 export { ordinarySetCreate };
