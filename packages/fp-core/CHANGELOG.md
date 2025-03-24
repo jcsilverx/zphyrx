@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.27
+
+### Patch Changes
+
+- 5b8e6b2: Refactor returning types of `OrdinaryArrayCreate` and `OrdinarySetCreate` methods
+
 ## 0.0.26
 
 ### Patch Changes
