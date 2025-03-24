@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.22
+
+### Patch Changes
+
+- 814a10d: Add `hasE` method
+
 ## 0.0.21
 
 ### Patch Changes
