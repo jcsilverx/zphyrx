@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.26
+
+### Patch Changes
+
+- c6a9135: Add `ordinaryArrayCreate` method
+
 ## 0.0.25
 
 ### Patch Changes
