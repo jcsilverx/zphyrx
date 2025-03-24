@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.25
+
+### Patch Changes
+
+- 923d863: Add overload signature to `hasE` method
+
 ## 0.0.24
 
 ### Patch Changes
