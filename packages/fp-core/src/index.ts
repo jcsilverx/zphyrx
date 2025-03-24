@@ -2,6 +2,7 @@ export * from "./comparison-operations";
 export * from "./keyed-collections";
 export * from "./object";
 export * from "./sort";
+export * from "./ordinary-array-create";
 export * from "./ordinary-set-create";
 export * from "./empty";
 export * from "./has-e";

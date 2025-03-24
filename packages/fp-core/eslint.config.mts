@@ -12,6 +12,7 @@ const config: FlatConfig.ConfigArray = zphyrx.config(
     name: "@zphyrx/eslint-config",
     rules: {
       "prefer-const": "off",
+      "@typescript-eslint/array-type": "off",
     },
   },
 );
