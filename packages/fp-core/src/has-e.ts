@@ -1,12 +1,12 @@
-type CompareFn<T, R = T> = (x: T, y: T) => R;
+type CompareFn<T, U, R = boolean> = (x: T, y: U) => R;
 
 /**
  * @since 0.0.22
  */
-const hasE = <T, S extends T>(
-  a: readonly T[],
-  value: S,
-  compareFn?: CompareFn<S, boolean>,
+const hasE = <T, U>(
+  a: readonly U[],
+  value: T,
+  compareFn?: CompareFn<T, U>,
 ): boolean => {
   let len = a.length >>> 0;
 
@@ -14,7 +14,8 @@ const hasE = <T, S extends T>(
     throw new TypeError("Compare must be a callback function");
   }
 
-  const compare: CompareFn<S, boolean> = (x, y): boolean =>
+  const compare: CompareFn<T, U> = (x, y): boolean =>
+    // @ts-expect-error --- silent Eq comparisson =')
     compareFn ? compareFn(x, y) : x === y;
 
   let k = 0;
@@ -22,7 +23,7 @@ const hasE = <T, S extends T>(
   while (k < len) {
     let E = a[k];
 
-    if (compare(E as S, value)) {
+    if (compare(value, E)) {
       return true;
     }
 
