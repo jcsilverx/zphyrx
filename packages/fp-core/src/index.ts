@@ -4,6 +4,7 @@ export * from "./object";
 export * from "./sort";
 export * from "./ordinary-set-create";
 export * from "./empty";
+export * from "./has-e";
 export * from "./set-has-index";
 export * from "./shift";
 export * from "./tag-tester";
