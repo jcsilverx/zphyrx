@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.23
+
+### Patch Changes
+
+- 9305d13: Add `isStrictlyEqual` method
+
 ## 0.0.22
 
 ### Patch Changes
