@@ -3,7 +3,7 @@ type CompareFn<T, U, R = boolean> = (x: T, y: U) => R;
 /**
  * @since 0.0.22
  */
-const hasE = <T, U>(
+const hasE = (<T, U>(
   a: readonly U[],
   value: T,
   compareFn?: CompareFn<T, U>,
@@ -31,6 +31,9 @@ const hasE = <T, U>(
   }
 
   return false;
+}) as {
+  <T, U>(a: readonly U[], value: T, compareFn?: CompareFn<T, U>): boolean;
+  <T, U>(a: readonly T[], value: U, compareFn?: CompareFn<T, U>): boolean;
 };
 
 export { hasE };
