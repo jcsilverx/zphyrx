@@ -1,10 +1,19 @@
 import { canonicalizeKeyedCollectionKey } from "./keyed-collections";
 
 /**
+ * @since 0.0.29
+ */
+type ReadonlySetLike<T> = {
+  keys(): Iterator<T>;
+  has(value: T): boolean;
+  readonly size: number;
+};
+
+/**
  * @since 0.0.28
  */
 const setDataHas = (<T, U>(
-  s: ReadonlySet<T>,
+  s: ReadonlySet<T> | ReadonlySetLike<T>,
   value: U,
   compareFn?: (x: T, y: U) => boolean,
 ): boolean => {
@@ -31,12 +40,12 @@ const setDataHas = (<T, U>(
   return false;
 }) as {
   <T, U>(
-    s: ReadonlySet<T>,
+    s: ReadonlySet<T> | ReadonlySetLike<T>,
     value: U,
     compareFn?: (x: T, y: U) => boolean,
   ): boolean;
   <T, U>(
-    s: ReadonlySet<U>,
+    s: ReadonlySet<U> | ReadonlySetLike<U>,
     value: T,
     compareFn?: (x: T, y: U) => boolean,
   ): boolean;
