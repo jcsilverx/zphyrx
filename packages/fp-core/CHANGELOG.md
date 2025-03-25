@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.31
+
+### Patch Changes
+
+- 5f4b3ca: Refactor `ordinaryArrayCreate` and `ordinarySetCreate` methods
+
 ## 0.0.30
 
 ### Patch Changes
