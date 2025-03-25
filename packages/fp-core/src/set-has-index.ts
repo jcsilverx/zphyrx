@@ -1,31 +1,39 @@
 import { canonicalizeKeyedCollectionKey } from "./keyed-collections";
 
-type CompareFn<T, R = T> = (x: T, y: T) => R;
+/**
+ * @since 0.0.30
+ */
+type ReadonlySetLike<T> = {
+  keys(): Iterator<T>;
+  has(value: T): boolean;
+  readonly size: number;
+};
 
 /**
  * @since 0.0.18
  */
-const setDataIndex = <T, S extends T>(
-  a: readonly T[],
-  value: S,
-  compareFn?: CompareFn<S, boolean>,
+const setDataIndex = (<T, U>(
+  s: ReadonlySet<T> | ReadonlySetLike<T>,
+  value: U,
+  compareFn?: (x: T, y: U) => boolean,
 ): number => {
-  let len = a.length >>> 0;
-
   if (compareFn !== undefined && typeof compareFn !== "function") {
     throw new TypeError("Compare must be a callback function");
   }
 
-  const compare: CompareFn<S, boolean> = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : x === y;
+  const compare: (x: T, y: U) => boolean = (x, y): boolean =>
+    compareFn ? compareFn(x, y) : x === (y as unknown);
 
-  let v = canonicalizeKeyedCollectionKey(value);
+  let keysIter = s.keys();
+  let V = canonicalizeKeyedCollectionKey(value);
   let k = 0;
 
-  while (k < len) {
-    let E = a[k];
+  let E: IteratorResult<T, undefined>;
 
-    if (compare(E as S, v)) {
+  while (!(E = keysIter.next()).done) {
+    let e = E.value;
+
+    if (compare(e, V)) {
       return k;
     }
 
@@ -33,6 +41,17 @@ const setDataIndex = <T, S extends T>(
   }
 
   return -1;
+}) as {
+  <T, U>(
+    s: ReadonlySet<T> | ReadonlySetLike<T>,
+    value: U,
+    compareFn?: (x: T, y: U) => boolean,
+  ): number;
+  <T, U>(
+    s: ReadonlySet<U> | ReadonlySetLike<U>,
+    value: T,
+    compareFn?: (x: T, y: U) => boolean,
+  ): number;
 };
 
 export { setDataIndex };
