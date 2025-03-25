@@ -6,9 +6,21 @@ type OrdinarySet<T> = T extends symbol ? never : Set<T>;
  * @since 0.0.20
  */
 const ordinarySetCreate = <T>(a: readonly T[]): OrdinarySet<T> => {
-  let R: Set<T | symbol> = new Set<T>(a);
+  let len = a.length >>> 0;
 
-  R.delete(EMPTY);
+  let R: Set<T> = new Set<T>();
+
+  let k = 0;
+
+  while (k < len) {
+    let E = a[k];
+
+    if (E !== EMPTY) {
+      R.add(E);
+    }
+
+    k++;
+  }
 
   return R as OrdinarySet<T>;
 };
