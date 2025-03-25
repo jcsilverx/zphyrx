@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.28
+
+### Patch Changes
+
+- bfae63d: Add `setDataHas` method
+
 ## 0.0.27
 
 ### Patch Changes
