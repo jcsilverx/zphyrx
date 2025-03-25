@@ -15,7 +15,7 @@ const ordinaryArrayCreate = <T>(a: ReadonlyArray<T>): OrdinaryArray<T> => {
   while (k < len) {
     let E = a[k];
 
-    if (E !== EMPTY && typeof E !== "symbol") {
+    if (E !== EMPTY) {
       R[to] = E;
 
       to++;

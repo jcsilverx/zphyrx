@@ -14,7 +14,7 @@ const ordinarySetCreate = <T>(a: readonly T[]): OrdinarySet<T> => {
   while (k < len) {
     let E = a[k];
 
-    if (E !== EMPTY && typeof E !== "symbol") {
+    if (E !== EMPTY) {
       R.add(E);
     }
 
