@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.30
+
+### Patch Changes
+
+- a64936b: Refactor `setHasIndex` method
+
 ## 0.0.29
 
 ### Patch Changes
