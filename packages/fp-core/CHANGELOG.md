@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.33
+
+### Patch Changes
+
+- c2c55b0: Revert the `ordinarySetCreate` method back to what it was
+
 ## 0.0.32
 
 ### Patch Changes
