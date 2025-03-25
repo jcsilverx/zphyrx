@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.32
+
+### Patch Changes
+
+- 8b685b6: Refactor `ordinarySetCreate` method
+
 ## 0.0.31
 
 ### Patch Changes
