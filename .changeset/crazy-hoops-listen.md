@@ -2,4 +2,4 @@
 "@zphyrx/fp-core": patch
 ---
 
-Refactor `ordinaryObjectCreate` methods
+Refactor `ordinaryArrayCreate` and `ordinarySetCreate` methods
