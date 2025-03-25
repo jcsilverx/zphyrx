@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.29
+
+### Patch Changes
+
+- 9e7d26e: Add custom `ReadonlySetLike` type definition
+
 ## 0.0.28
 
 ### Patch Changes
