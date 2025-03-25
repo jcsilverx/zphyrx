@@ -6,6 +6,7 @@ export * from "./ordinary-array-create";
 export * from "./ordinary-set-create";
 export * from "./empty";
 export * from "./has-e";
+export * from "./set-data-has";
 export * from "./set-has-index";
 export * from "./shift";
 export * from "./tag-tester";
