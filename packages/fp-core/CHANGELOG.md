@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.37
+
+### Patch Changes
+
+- bcad994: Add `ordinaryMapCreate` method
+
 ## 0.0.36
 
 ### Patch Changes
