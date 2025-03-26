@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.34
+
+### Patch Changes
+
+- dfe1303: Add `mapDataHas` method
+
 ## 0.0.33
 
 ### Patch Changes
