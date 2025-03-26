@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.35
+
+### Patch Changes
+
+- 523f3de: Add `combine/concat` and `mapHasIndex` methods
+
 ## 0.0.34
 
 ### Patch Changes
