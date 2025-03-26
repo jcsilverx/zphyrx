@@ -5,6 +5,7 @@ export * from "./sort";
 export * from "./map-data-has";
 export * from "./map-has-index";
 export * from "./ordinary-array-create";
+export * from "./ordinary-map-create";
 export * from "./ordinary-set-create";
 export * from "./empty";
 export * from "./has-e";
