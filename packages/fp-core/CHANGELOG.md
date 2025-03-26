@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.38
+
+### Patch Changes
+
+- 78bcb93: Refactor `ordinaryMapCreate` method
+
 ## 0.0.37
 
 ### Patch Changes
