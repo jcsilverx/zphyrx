@@ -1,6 +1,8 @@
 import { EMPTY } from "./empty";
 
-type OrdinaryMap<K, T> = K extends symbol ? never : Map<K, T>;
+type ExcludeSymbol<T> = T extends symbol ? never : T;
+
+type OrdinaryMap<K, T> = K extends symbol ? never : Map<K, ExcludeSymbol<T>>;
 
 /**
  * @since 0.0.37
