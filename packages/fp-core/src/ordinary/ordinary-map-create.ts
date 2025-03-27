@@ -6,8 +6,8 @@ import { EMPTY } from "../empty";
  * @since 0.0.26
  */
 type OrdinaryMapCreate = {
-  <K, T, S extends T>(a: readonly [[K, T]]): Map<K, S>;
-  <K, T>(a: readonly [[K, T]]): Map<K, T>;
+  <K, T, S extends T>(a: readonly [K, T][]): Map<K, S>;
+  <K, T>(a: readonly [K, T][]): Map<K, T>;
 };
 
 /**
@@ -17,7 +17,7 @@ type OrdinaryMapCreate = {
  *
  * @since 0.0.26
  */
-const ordinaryMapCreate = (<K, T>(a: readonly [[K, T]]): Map<K, T> => {
+const ordinaryMapCreate = (<K, T>(a: readonly [K, T][]): Map<K, T> => {
   let len = a.length >>> 0;
 
   let R: Map<K, T> = new Map<K, T>();
