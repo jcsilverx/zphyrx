@@ -7,7 +7,7 @@ import { EMPTY } from "../empty";
  */
 type OrdinaryMapCreate = {
   // TODO -- improve naming
-  <K, T, V extends K>(a: readonly [K, T][]): Map<V, T>;
+  <K, T, S extends T, V extends K>(a: readonly [K, T][]): Map<V, S>;
   <K, T>(a: readonly [K, T][]): Map<K, T>;
 };
 
