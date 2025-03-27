@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.43
+
+### Patch Changes
+
+- 8079458: Refactor `ordinary`methods
+
 ## 0.0.42
 
 ### Patch Changes
