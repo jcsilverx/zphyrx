@@ -18,6 +18,11 @@ type ReadonlySetLike<T> = {
  */
 type SetDataHas = {
   <T, U>(
+    s: ReadonlySet<U> | ReadonlySetLike<U>,
+    value: T,
+    compareFn?: (x: T, y: U) => boolean,
+  ): boolean;
+  <T, U>(
     s: ReadonlySet<T> | ReadonlySetLike<T>,
     value: U,
     compareFn?: (x: T, y: U) => boolean,
