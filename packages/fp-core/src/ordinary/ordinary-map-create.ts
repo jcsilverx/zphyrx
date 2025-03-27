@@ -6,7 +6,8 @@ import { EMPTY } from "../empty";
  * @since 0.0.26
  */
 type OrdinaryMapCreate = {
-  <K, T, S extends T>(a: readonly [K, T][]): Map<K, S>;
+  // TODO -- improve naming
+  <K, T, V extends K>(a: readonly [K, T][]): Map<V, T>;
   <K, T>(a: readonly [K, T][]): Map<K, T>;
 };
 
