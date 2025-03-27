@@ -1,4 +1,6 @@
 /**
+ * @internal
+ *
  * @since 0.0.14
  */
 const __slice = <T>(
@@ -22,11 +24,11 @@ const __slice = <T>(
 
   let count = Math.max(final - k, 0);
 
-  let R: Array<T> = new Array<T>(count);
+  let R: T[] = new Array<T>(count);
   let n = 0;
 
   while (k < final) {
-    let E = a[k] as T;
+    let E = a[k];
 
     if (k in a) R[n] = E;
 

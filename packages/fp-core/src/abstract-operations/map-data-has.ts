@@ -1,6 +1,10 @@
-import { canonicalizeKeyedCollectionKey } from "./keyed-collections";
+import { canonicalizeKeyedCollectionKey } from "../keyed-collections";
 
 /**
+ * @internal
+ *
+ * @category abstract operation
+ *
  * @since 0.0.34
  */
 const mapDataHas = <K, T>(
@@ -13,7 +17,7 @@ const mapDataHas = <K, T>(
   }
 
   const compare: (x: K, y: K) => boolean = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : (x === x) === y;
+    compareFn ? compareFn(x, y) : x === y;
 
   let keysIter = m.keys();
   let k = canonicalizeKeyedCollectionKey(key);
