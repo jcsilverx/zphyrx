@@ -5,6 +5,11 @@
  */
 type HasE = {
   <T, U>(
+    a: readonly U[],
+    value: T,
+    compareFn?: (x: T, y: U) => boolean,
+  ): boolean;
+  <T, U>(
     a: readonly T[],
     value: U,
     compareFn?: (x: T, y: U) => boolean,
