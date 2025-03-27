@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.41
+
+### Patch Changes
+
+- 00aa722: Refactor `Abstract Operation` methods
+
 ## 0.0.40
 
 ### Patch Changes
