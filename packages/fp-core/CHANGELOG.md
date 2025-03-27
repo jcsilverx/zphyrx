@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.40
+
+### Patch Changes
+
+- 0d543a9: Refactor `hasE` method
+
 ## 0.0.39
 
 ### Patch Changes
