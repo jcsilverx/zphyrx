@@ -16,7 +16,7 @@ type ReadonlySetLike<T> = {
  *
  * @since 0.0.29
  */
-type SetHasIndex = {
+type SetDataIndex = {
   <T, U>(
     s: ReadonlySet<T> | ReadonlySetLike<T>,
     value: U,
@@ -36,7 +36,7 @@ type SetHasIndex = {
  *
  * @since 0.0.34
  */
-const setHasIndex: SetHasIndex = <T>(
+const setDataIndex: SetDataIndex = <T>(
   s: ReadonlySet<T> | ReadonlySetLike<T>,
   value: T,
   compareFn?: (x: T, y: T) => boolean,
@@ -67,4 +67,4 @@ const setHasIndex: SetHasIndex = <T>(
   return -1;
 };
 
-export { setHasIndex };
+export { setDataIndex };
