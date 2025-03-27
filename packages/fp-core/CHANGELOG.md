@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.46
+
+### Patch Changes
+
+- 0999a33: Refactor `getOwnKeys` method
+
 ## 0.0.45
 
 ### Patch Changes
