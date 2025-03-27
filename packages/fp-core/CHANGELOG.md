@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.44
+
+### Patch Changes
+
+- 3d5deeb: Refactor `ordinary` methods
+
 ## 0.0.43
 
 ### Patch Changes
