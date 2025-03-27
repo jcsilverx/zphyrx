@@ -15,8 +15,7 @@ type GetOwnKeys = {
  * @param r - The `Record` to get the keys from.
  * @returns An `Array` of strings representing the property names.
  */
-const getOwnKeys = (<T, K extends string>(r: Record<K, T>): K[] =>
-  Object.keys(r) as K[]) as GetOwnKeys;
+const getOwnKeys = Object.keys as GetOwnKeys;
 
 export { getOwnKeys };
 export type { GetOwnKeys };
