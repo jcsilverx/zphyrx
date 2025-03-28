@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.47
+
+### Patch Changes
+
+- 3673482: Add `equals` method
+
 ## 0.0.46
 
 ### Patch Changes
