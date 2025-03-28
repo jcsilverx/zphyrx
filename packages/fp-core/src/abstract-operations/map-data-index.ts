@@ -1,9 +1,14 @@
-import { canonicalizeKeyedCollectionKey } from "./keyed-collections";
+import { equals } from "../equals";
+import { canonicalizeKeyedCollectionKey } from "../keyed-collections";
 
 /**
+ * @internal
+ *
+ * @category abstract operation
+ *
  * @since 0.0.35
  */
-const mapHasIndex = <K, T>(
+const mapDataIndex = <K, T>(
   m: ReadonlyMap<K, T>,
   key: K,
   compareFn?: (x: K, y: K) => boolean,
@@ -11,9 +16,6 @@ const mapHasIndex = <K, T>(
   if (compareFn !== undefined && typeof compareFn !== "function") {
     throw new TypeError("Compare must be a callback function");
   }
-
-  const compare: (x: K, y: K) => boolean = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : (x === x) === y;
 
   let keysIter = m.keys();
   let k = canonicalizeKeyedCollectionKey(key);
@@ -24,7 +26,7 @@ const mapHasIndex = <K, T>(
   while (!(E = keysIter.next()).done) {
     let e = E.value;
 
-    if (compare(e, k)) {
+    if (equals(e, k, compareFn)) {
       return index;
     }
 
@@ -34,4 +36,4 @@ const mapHasIndex = <K, T>(
   return -1;
 };
 
-export { mapHasIndex };
+export { mapDataIndex };

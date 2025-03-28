@@ -1,3 +1,4 @@
+import { equals } from "../equals";
 import { canonicalizeKeyedCollectionKey } from "../keyed-collections";
 
 /**
@@ -45,9 +46,6 @@ const setDataIndex: SetDataIndex = <T>(
     throw new TypeError("Compare must be a callback function");
   }
 
-  const compare: (x: T, y: T) => boolean = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : x === y;
-
   let keysIter = s.keys();
   let v = canonicalizeKeyedCollectionKey(value);
   let index = 0;
@@ -57,7 +55,7 @@ const setDataIndex: SetDataIndex = <T>(
   while (!(E = keysIter.next()).done) {
     let e = E.value;
 
-    if (compare(e, v)) {
+    if (equals(e, v)) {
       return index;
     }
 

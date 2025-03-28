@@ -1,3 +1,4 @@
+import { equals } from "../equals";
 import { canonicalizeKeyedCollectionKey } from "../keyed-collections";
 
 /**
@@ -16,9 +17,6 @@ const mapDataHas = <K, T>(
     throw new TypeError("Compare must be a callback function");
   }
 
-  const compare: (x: K, y: K) => boolean = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : x === y;
-
   let keysIter = m.keys();
   let k = canonicalizeKeyedCollectionKey(key);
 
@@ -27,7 +25,7 @@ const mapDataHas = <K, T>(
   while (!(E = keysIter.next()).done) {
     let e = E.value;
 
-    if (compare(e, k)) {
+    if (equals(e, k)) {
       return true;
     }
   }

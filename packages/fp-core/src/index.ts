@@ -1,4 +1,3 @@
-export * from "./map-has-index";
 export * from "./shift";
 export * from "./tag-tester";
 export * from "./combine";
@@ -10,3 +9,4 @@ export * from "./keyed-collections";
 export * from "./object";
 export * from "./sort";
 export * from "./empty";
+export * from "./equals";

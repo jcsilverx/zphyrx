@@ -1,3 +1,5 @@
+import { equals } from "../equals";
+
 /**
  * @internal
  *
@@ -35,15 +37,12 @@ const hasE: HasE = <T>(
     throw new TypeError("Compare must be a callback function");
   }
 
-  const compare: (x: T, y: T) => boolean = (x, y): boolean =>
-    compareFn ? compareFn(x, y) : x === y;
-
   let k = 0;
 
   while (k < len) {
     let E = a[k];
 
-    if (compare(value, E)) {
+    if (equals(value, E)) {
       return true;
     }
 

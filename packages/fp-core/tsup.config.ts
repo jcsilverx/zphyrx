@@ -6,6 +6,13 @@ const config: TsupUserConfig = tsup.config({
   entry: ["src/index.ts"],
   dts: true,
   sourcemap: true,
+  //
+  pure: ["Symbol"],
+  treeshake: {
+    preset: "smallest",
+    propertyReadSideEffects: false,
+    moduleSideEffects: false,
+  },
 });
 
 export default config;
