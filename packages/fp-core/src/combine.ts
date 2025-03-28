@@ -1,32 +1,21 @@
 /**
+ * @internal
+ *
  * @since 0.0.35
  */
-const combine = (<K, T, U>(
+const combine = <K, T>(
   m: ReadonlyMap<K, T>,
   key: K,
-  value: U,
-  combineFn?: (x: T, y: U) => T | U,
-): T | U => {
+  value: T,
+  combineFn?: (x: T, y: T) => T,
+): T => {
   let val = m.get(key);
 
-  if (combineFn && val !== undefined) {
-    return combineFn(val, value);
+  if (combineFn !== undefined && val !== undefined) {
+    return combineFn(value, val);
   }
 
   return value;
-}) as {
-  <K, T, U>(
-    m: ReadonlyMap<K, U>,
-    key: K,
-    value: T,
-    combineFn?: (x: T, y: U) => T | U,
-  ): T | U;
-  <K, T, U>(
-    m: ReadonlyMap<K, T>,
-    key: K,
-    value: U,
-    combineFn?: (x: T, y: U) => T | U,
-  ): T | U;
 };
 
 export { combine };
