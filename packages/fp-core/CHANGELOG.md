@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.48
+
+### Patch Changes
+
+- 21628f0: Refactor `combine` method
+
 ## 0.0.47
 
 ### Patch Changes
