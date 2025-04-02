@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.50
+
+### Patch Changes
+
+- ae8a94f: Add `ordinaryRecordCreate` and `recordDataIndex` methods
+
 ## 0.0.49
 
 ### Patch Changes
