@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.51
+
+### Patch Changes
+
+- 9dadb82: Add `jsonParse` method
+
 ## 0.0.50
 
 ### Patch Changes
