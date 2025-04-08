@@ -10,3 +10,4 @@ export * from "./object";
 export * from "./sort";
 export * from "./empty";
 export * from "./equals";
+export * from "./json-parse";
