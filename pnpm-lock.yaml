@@ -37,8 +37,8 @@ importers:
         specifier: ^1.1.5
         version: 1.1.5(@typescript-eslint/eslint-plugin@8.26.0(@typescript-eslint/parser@8.26.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(@typescript-eslint/utils@8.30.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(jest@29.7.0(@types/node@12.20.55))(prettier@3.5.3)(react@19.0.0)(storybook@8.4.7(prettier@3.5.3))(typescript@5.8.3)(vitest@3.1.1(@types/node@12.20.55))
       '@zphyrx/tsup-config':
-        specifier: ^1.1.3
-        version: 1.1.3(tsup@8.4.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0))
+        specifier: ^1.1.4
+        version: 1.1.4(tsup@8.4.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0))
       '@zphyrx/typescript-config':
         specifier: ^1.1.0
         version: 1.1.0(typescript@5.8.3)
@@ -1273,10 +1273,13 @@ packages:
     peerDependencies:
       prettier: ^3.5.1
 
-  '@zphyrx/tsup-config@1.1.3':
-    resolution: {integrity: sha512-m8xbdkzDTPkExMPwoHJ8LOu3y5yVNc8WtoFCV91GHvPKK5LCfigd60LcmrlrGbn93QHAFVfRtjehvk8TrfyPTA==}
+  '@zphyrx/tsup-config@1.1.4':
+    resolution: {integrity: sha512-DZPv+1cszJaLxxD7P8cmnEE1/TcKfEl9+1dnW9lrjnGhOZspvyt4eEZ6/h0nNurz4CLE+IjQtSARaQyYZj8hSA==}
     peerDependencies:
-      tsup: ^8.3.6
+      tsup: ^8.4.0
+    peerDependenciesMeta:
+      tsup:
+        optional: true
 
   '@zphyrx/typescript-config@1.1.0':
     resolution: {integrity: sha512-BugeXdqBquLKnjj/9jF1AJMrD2rXAu1stz1iwOpmR6ZQur+FfQlWJmVEN4IKMvMtHtJIkGHtmO8q6zPA5gGgCg==}
@@ -4898,9 +4901,10 @@ snapshots:
       '@zphyrx/merge-config': 1.1.3
       prettier: 3.5.3
 
-  '@zphyrx/tsup-config@1.1.3(tsup@8.4.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0))':
+  '@zphyrx/tsup-config@1.1.4(tsup@8.4.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0))':
     dependencies:
       '@zphyrx/merge-config': 1.1.3
+    optionalDependencies:
       tsup: 8.4.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0)
 
   '@zphyrx/typescript-config@1.1.0(typescript@5.8.3)':
