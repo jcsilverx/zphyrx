@@ -40,7 +40,7 @@
   "devDependencies": {
     "@typescript-eslint/utils": "^8.35.0",
     "@zphyrx/eslint-config": "^1.1.5",
-    "@zphyrx/tsup-config": "^1.1.4",
+    "@zphyrx/tsup-config": "^2.0.1",
     "@zphyrx/typescript-config": "^1.1.1",
     "@zphyrx/vitest-config": "^1.1.4",
     "eslint": "^9.29.0",
