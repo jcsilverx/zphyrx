@@ -40,8 +40,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1(tsup@8.5.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0))
       '@zphyrx/typescript-config':
-        specifier: ^1.1.1
-        version: 1.1.1(typescript@5.8.3)
+        specifier: ^2.0.1
+        version: 2.0.1(typescript@5.8.3)
       '@zphyrx/vitest-config':
         specifier: ^2.0.1
         version: 2.0.1(vitest@3.2.4(@types/node@12.20.55))
@@ -1308,8 +1308,8 @@ packages:
       tsup:
         optional: true
 
-  '@zphyrx/typescript-config@1.1.1':
-    resolution: {integrity: sha512-Vg4qNbhoerJDyxIMJ2Z/fs3Z3mdN1OlSOC2mQsKVBrpSTdjoeRPprFvo/vWYyAjBChnpWYIOvrWdz+UXGHB36Q==}
+  '@zphyrx/typescript-config@2.0.1':
+    resolution: {integrity: sha512-Kf+rVkLc448++mwOJ9dR3DrdJ/9gYnTogca2gMlOPvu16xgRQmvvamhp2mbkbFjinSgt5ENEUz5N5SLHBpuckA==}
     peerDependencies:
       typescript: ^5.8.3
     peerDependenciesMeta:
@@ -5001,7 +5001,7 @@ snapshots:
     optionalDependencies:
       tsup: 8.5.0(jiti@2.4.2)(postcss@8.4.49)(typescript@5.8.3)(yaml@2.7.0)
 
-  '@zphyrx/typescript-config@1.1.1(typescript@5.8.3)':
+  '@zphyrx/typescript-config@2.0.1(typescript@5.8.3)':
     optionalDependencies:
       typescript: 5.8.3
 
