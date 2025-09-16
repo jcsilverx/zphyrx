@@ -1,5 +1,11 @@
 # @zphyrx/fp-core
 
+## 0.0.52
+
+### Patch Changes
+
+- 2341ca4: add sorted method
+
 ## 0.0.51
 
 ### Patch Changes
